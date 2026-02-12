@@ -1,11 +1,6 @@
-const { chromium } = require('playwright');
+import { test, expect } from '@playwright/test';
 
-(async () => {
-  const browser = await chromium.launch({
-    headless: false
-  });
-  const context = await browser.newContext();
-  const page = await context.newPage();
+test('test', async ({ page }) => {
   await page.goto('https://www.saucedemo.com/');
   await page.getByText('Swag Labs').click();
   await page.locator('[data-test="username"]').click();
@@ -16,9 +11,6 @@ const { chromium } = require('playwright');
   await page.locator('[data-test="add-to-cart-sauce-labs-backpack"]').click();
   await page.locator('[data-test="shopping-cart-link"]').click();
   await page.locator('[data-test="checkout"]').click();
-  await page.close();
-
-  // ---------------------
-  await context.close();
-  await browser.close();
-})();
+  await page.getByRole('button', { name: 'Open Menu' }).click();
+  await page.locator('[data-test="logout-sidebar-link"]').click();
+});

@@ -1,5 +1,20 @@
 import { test, expect } from '@playwright/test';
 
+await context.traicing.start({ snapshots: true,snapshots: true });
+await context.traicing.stop({ path:'test_trace.zip' });
+
+let context;
+let page;
+test.beforeAll(async({ page }) => {
+  context = browser.newContext();
+  context.traicing.star({screenshots: true,snapshots: true});
+  page = await context.newPage();
+});
+
+test.afterAll(async({ page }) => {
+  await context.traicing.stop({path:'test-trace.zip'})
+});
+
 test('test', async ({ page }) => {
   await page.goto('https://www.saucedemo.com/');
   await page.locator('[data-test="username"]').click();
