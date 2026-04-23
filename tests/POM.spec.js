@@ -7,5 +7,4 @@ test('POM test @POMTEST', async ({ page }) => {
     await login.navigateTopage();
 
     await login.login('standard_user', 'secret_sauce');
-
 });
