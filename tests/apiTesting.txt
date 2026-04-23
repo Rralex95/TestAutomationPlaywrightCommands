@@ -13,6 +13,8 @@ Que es API?
    - Es una solicitud que ayuda a agregar un registro dentro de tu base de datos o de tu interfaz
  - PUT 
    - Es una solicitud que ayuda a editar o modificar un registro dentro de tu base de datos o de tu interfaz
+ - PATCH 
+   - Es una solicitud que ayuda a realizar actualizaciones parciales en un recurso existente dentro de tu base de datos o de tu interfaZ
  - DELETE
    - Es una solicitud que ayuda a eliminar un registro dentro de tu base de datos o de tu interfaz
 
