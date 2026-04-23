@@ -1,0 +1,21 @@
+POM (Page Object Model)
+
+Que es POM?
+- Es un patron de diseño , es una forma de ordenar u organizar tu codigo para que sea lo mas legible y modular posible
+
+- Nos ayuda a que nuestro codigo sea modular y que podamos utilizar funciones o localizadores en diferentes parte de nuestro proyecto
+
+Cual es la estructura?
+-> Carpeta test
+-> Carpeta Page Objects
+
+Que es un objeto?
+- Un objeto en programacion es util porque puede tomar varias formas segun sus propiedades  asi podemos usar diferentes tipo de datos o informacion para las mismas funciones
+
+Cada pagemodel files tendra:
+-> Una clase exportable
+-> Un constructor dentro de cada clase 
+
+Que es un constructor?
+- Es un bloque que se ejecuta una sola vez, ayuda a inicializar las clases, en este caso "loginpage"
+- Tambien ayuda a inicializar las dependencias de page, que contiene la informacion del contexto del browser y en el que se esta ejecutando la prueba

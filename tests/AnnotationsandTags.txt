@@ -1,0 +1,22 @@
+Annotations and tags
+
+Que son las Annotations
+ - Son caracteristicas que le das a las pruebas para interpretarlas de las maneras que quieras
+
+Que Annotations hay ?
+ - Skip
+  - Salta la prueba
+ - Fail
+  - Hace que la prueba falle o lo muestra como fallo
+ - Fixme
+  - Lo salta pero con una etiqueta de arreglar
+ - Slow
+  - Duplica el timeout de la prueba
+ - Only 
+  - Solo ejecuta esa prueba en especifico 
+
+Que son los Tags?
+ - Son titulos o etiquetas que les das a tu prueba para que playwright las identifique de una manera especifica
+ - @Estoesuntag
+ - Para que se pueda ejecutar un tag tenemos que usat la propieda -g | -grep
+

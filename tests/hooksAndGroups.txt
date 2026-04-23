@@ -1,0 +1,18 @@
+Hooks and Groups -- Enganches y grupos
+
+Hooks:
+beforeAll
+  -Se ejecuta antes de cualquier prueba. Asi hayan 40 pruebas se va a ejecutar antes de todas las 40 pruebas.
+beforeEach
+  -Se ejecuta antes de cada prueba. Si hay 40 pruebas , se ejecuta antes de cada una de las 40 pruebas.
+afterAll
+  -Se ejecuta despues de cualquier prueba. Asi hayan 40 pruebas se va a ejecutar despues de las 40 pruebas.
+afterEach
+  -Se ejecuta despues de cada prueba. Si hay 40 pruebas , se ejecuta despues de cada una de las 40 pruebas.
+
+groups:
+Describe
+  -Ayuda a agrupar y mantener organizado tus pruebas.
+
+  Porque necesitas los hooks .
+  Muxhas veces necesitamos hacer una accion antes de ejecutar cualquier prueba. Esta accion se puede codificar en un hook y que se ejecute antes 

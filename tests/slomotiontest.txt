@@ -1,0 +1,23 @@
+Video recording  and slow motion test.
+-Slow motion: Para ejecutar pruebas mas lentas.
+-Video recording Es grabar el script que creaste y visualizarlo en el html reporter  o en tu computadora
+
+Configuracion y aplicacion 
+-Se configura en playwright.config.js
+-Se aplica en cada script que uses.
+    -Video: on,off,on-first-retry
+
+      use: {
+    /* Base URL to use in actions like `await page.goto('')`. */
+    // baseURL: 'http://localhost:3000',
+
+    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+    trace: 'on-first-retry',
+    video: 'on',
+    launchOptions:{slowMo:1000}
+    // trace: 'on',
+    // trace: 'off',
+    // trace: 'retain-on-failure',ñ
+  },
+
+Sabemos que slowMo: 1000 -- esta en ms, lo que quiere decir que cada step va a tomar 1 segundo mas de lo normal. 1000ms -- 1s.

@@ -1,0 +1,31 @@
+API playwright
+
+Que es API?
+ - Application Program Interface
+ - Serie de reglas o protocoloa que nos ayudan a comunicar aplicaciones entre si 
+
+ * Puente que facilita la comunicacion entre diferentes aplicativos 
+
+ Solicitudes API:
+ - GET
+   - Es una solicitud que ayuda a recibir informacion sin editar sin modificar ningun tipo de dato
+ - POST
+   - Es una solicitud que ayuda a agregar un registro dentro de tu base de datos o de tu interfaz
+ - PUT 
+   - Es una solicitud que ayuda a editar o modificar un registro dentro de tu base de datos o de tu interfaz
+ - DELETE
+   - Es una solicitud que ayuda a eliminar un registro dentro de tu base de datos o de tu interfaz
+
+Status code:
+Los empiezan en:
+2xx - Representan un exito en tu solicitud 
+4xx - Representan un error en tu solicitud pero de parte del cliente
+5xx - Representan un error en tu solicitud pero de parte del servidor
+
+200,201,204 y 404
+200 - Se ejecuto con exito
+201 - Se agrego con exito
+204 - Se ejecuto con exito pero no retorno ningun registro 
+404 - Quiere decir que no exite el end point
+
+
